@@ -21,3 +21,33 @@ This document captures the preferred baseline for the primary Debian host used i
 ## Notes
 - For production-like environments, prefer systemd-managed services and explicit configuration files.
 - For lab experiments, keep changes small and reversible.
+
+## Current Debian workstation baseline
+
+Last reviewed: 2026-07-19
+
+### Completed
+
+- Debian installed on physical laptop.
+- GNOME desktop installed.
+- sudo configured and working.
+- System packages updated.
+- Git installed.
+- Vim installed.
+- GCC and G++ installed.
+- build-essential installed.
+- curl and wget installed.
+- OpenSSH client installed.
+- VS Code installed.
+- Brave installed.
+- Tailscale installed.
+- Nextcloud Desktop installed.
+- Engineering-Lab repository cloned.
+- Application repositories cloned.
+- SSH access to the Raspberry Pi tested successfully.
+
+### Not yet decided
+
+- Default container runtime: Docker or Podman.
+- Local service layout.
+- Monitoring and observability stack.
