@@ -25,12 +25,19 @@ required_files=(
   machines/rpi4-samorinha/observations.md
   runbooks/README.md runbooks/TEMPLATE.md
   runbooks/audio/hp-zbook-sof-pipewire-speakers.md
+  runbooks/development/vim.md
+  runbooks/development/vim-clipboard-images.md
+  runbooks/development/c-debugging.md
+  runbooks/development/serial-device-access.md
+  runbooks/desktop/x11-wayland-diagnostics.md
+  runbooks/git/workflow.md
   homelab/README.md
   configs/profiles/README.md configs/profiles/development-workstation.md
   configs/platforms/README.md
   configs/platforms/debian.md configs/platforms/ubuntu.md
   configs/platforms/proxmox.md configs/platforms/raspberry-pi.md
   configs/templates/README.md configs/services/README.md
+  configs/templates/bash/aliases.sh configs/templates/vim/markdown-images.vim
   scripts/README.md scripts/verify_repo.sh
   decisions/README.md decisions/TEMPLATE.md
   decisions/2026-10-05-repository-structure.md
@@ -53,4 +60,6 @@ for file in "${required_files[@]}"; do
   fi
 done
 
-echo "Repository verification passed (Phase 1.1 concrete inventory and retained documentation)."
+bash -n "$repo_dir/configs/templates/bash/aliases.sh"
+
+echo "Repository verification passed (structure, canonical runbooks, alias syntax and retained documentation)."
