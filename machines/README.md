@@ -4,7 +4,7 @@ This inventory represents concrete hosts, not generic hardware platforms. Reposi
 
 ## Host inventory
 
-Identity associations below are supplied by the user in Phase 1.1 on 2026-10-05. Exact OS releases and hardware details remain unknown unless evidenced in a linked record. Role/location columns summarize inventory scope; detailed observations belong to each host record.
+Identity associations below are supplied by the user in Phase 1.1 and subsequent live evidence on 2026-10-05. Exact OS releases and hardware details remain unknown unless evidenced in a linked record. Role/location columns summarize inventory scope; detailed observations belong to each host record.
 
 | Repository machine key | Hostname / known node name | Platform / OS | Role | Operational location | Current documentation status |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@ Identity associations below are supplied by the user in Phase 1.1 on 2026-10-05.
 | [pve-braganca](pve-braganca/README.md) | `pve-braganca` (supplied node name) | Proxmox | Separate Proxmox host | Bragança | Identity confirmed; availability condition unresolved |
 | [rpi5](rpi5/README.md) | `raspberrypi` (verified current hostname) | Raspberry Pi 5 Model B Rev 1.1 / Debian 13 (trixie) | Concrete Pi 5 node; desired workload role unspecified | Not supplied | Hardware/OS/storage/service and authorized Docker workload evidence dated 2026-10-05 |
 | [rpi4-samorinha](rpi4-samorinha/README.md) | `rpi4-samorinha` (SSH-verified hostname) | Raspberry Pi 4 / Linux; distribution release unverified | Pi node | Samorinha / Bragança lab | Hardware/system/storage and selected service evidence dated 2026-10-05; additional workloads unverified |
+| [toshiba-node](toshiba-node/README.md) | `toshiba-node` (verified hostname) | TOSHIBA TECRA R940 / Debian 13 (trixie) | Manual Nextcloud data-copy destination | Not supplied | Hardware/software/DNS and in-progress rsync/SSH copy evidence dated 2026-10-05 |
 
 ## Runtime observations
 

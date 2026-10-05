@@ -23,6 +23,9 @@ required_files=(
   machines/rpi4-samorinha/README.md
   machines/rpi4-samorinha/inventory.md
   machines/rpi4-samorinha/observations.md
+  machines/toshiba-node/README.md
+  machines/toshiba-node/inventory.md
+  machines/toshiba-node/observations.md
   runbooks/README.md runbooks/TEMPLATE.md
   runbooks/audio/hp-zbook-sof-pipewire-speakers.md
   runbooks/development/vim.md
@@ -31,7 +34,17 @@ required_files=(
   runbooks/development/serial-device-access.md
   runbooks/desktop/x11-wayland-diagnostics.md
   runbooks/git/workflow.md
+  runbooks/networking/connectivity-and-dns.md
+  runbooks/networking/tailscale.md
+  runbooks/networking/ssh-remote-access.md
+  runbooks/networking/internet-sharing.md
+  runbooks/services/nextcloud-upload-recovery.md
   homelab/README.md
+  homelab/networking/topology.md
+  homelab/incidents/README.md
+  homelab/incidents/undated-nextcloud-android-upload-recovery.md
+  homelab/incidents/undated-mobile-tethering-router-sharing.md
+  homelab/incidents/undated-resolver-file-overwrite.md
   configs/profiles/README.md configs/profiles/development-workstation.md
   configs/platforms/README.md
   configs/platforms/debian.md configs/platforms/ubuntu.md
@@ -62,4 +75,4 @@ done
 
 bash -n "$repo_dir/configs/templates/bash/aliases.sh"
 
-echo "Repository verification passed (structure, canonical runbooks, alias syntax and retained documentation)."
+echo "Repository verification passed (structure, canonical runbooks/cases, alias syntax and retained documentation)."

@@ -10,4 +10,6 @@ See [rpi5: running-service observation, 2026-10-05](../../machines/rpi5/observat
 
 ## Verification limits
 
-DNS configuration, client usage, end-to-end DNS behavior, persistence and backup strategy are not established by running-service evidence. No service changes or restarts were performed.
+Running-service evidence alone does not establish DNS configuration or client behavior. Subsequent [Toshiba DNS verification](../../machines/toshiba-node/observations.md#subsequent-dns-verification) establishes Tailscale's configured Pi-hole resolver relationship and a successful client-side query through Tailscale DNS/MagicDNS. It does not provide Pi-hole-side query/forwarding evidence or establish every client's DNS path. Persistence and backup strategy remain unverified. No service changes or restarts were performed.
+
+For resolver/listener/reachability investigation, use [connectivity and DNS diagnosis](../../runbooks/networking/connectivity-and-dns.md). Historical resolver changes linked there do not establish this service's current configuration or cause.
